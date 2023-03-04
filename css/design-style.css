@@ -105,6 +105,22 @@ header nav ul li .active .icons {
     color: var(--theme-bg-color);
 }
 
+/* Google Maps */
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 119px;
+    width: 235px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 119px;
+    width: 235px;
+}
+
 /* Footer Header */
 
 header .footer-header {
@@ -153,6 +169,199 @@ header .footer-header p a {
 #Menubtn i {
     font-size: 4px;
 }
+
+
+/* Pop up Contact form Begins */
+
+.show-btn {
+    padding: 5px 5px 5px 5px;
+    position: fixed;
+    top: 540px;
+    right: 25px;
+    width: 42px;
+    height: 44px;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    background-color: rgb(24, 161, 161);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    z-index: 999;
+    box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+input[type="checkbox"] {
+    padding: 5px 5px 5px 5px;
+    position: fixed;
+    top: 540px;
+    right: 25px;
+    width: 42px;
+    height: 44px;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    background-color: var(--theme-bg-color);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    z-index: 999;
+    visibility: hidden;
+}
+
+#show:checked~.wrapper {
+    display: none;
+}
+
+.wrapper {
+    padding: 0;
+    position: fixed;
+    top: 135px;
+    right: 65px;
+    width: 370px;
+    height: 400px;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.871);
+    z-index: 999;
+}
+
+.wrapper h5 {
+    color: white;
+    padding: 15px;
+    background-color: #2C2F3F;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.wrapper h5+p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.wrapper form {
+    margin: 10px;
+    width: 350px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 236, 236);
+}
+
+input {
+    display: block;
+    width: 320px;
+    height: 51px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #040b14;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(70, 67, 67);
+}
+
+button {
+    width: 320px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: rgb(238, 236, 236);
+}
+
+button:hover {
+    background-color: rgb(18, 68, 68);
+    color: white;
+}
+
+.wrapper {
+    animation: popup 1s;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Mobile Version Pop up Contact */
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 315px;
+        height: 400px;
+    }
+
+    .wrapper h5+p {
+        font-size: 13px;
+        margin-top: 10px;
+        padding: 5px 20px;
+       
+    }
+    
+    .wrapper form {
+        margin: 10px;
+        width: 290px;
+       
+    }
+    
+    input {
+        width: 260px;
+    }
+    
+    button {
+        width: 260px;
+        padding: 8px;
+    }
+}
+
+/* Pop up Contact form Ends */
+
+
 
 /* Mobile  View */
 
@@ -743,30 +952,160 @@ main {
     -moz-box-shadow: 1px 20px 16px -13px rgba(0, 0, 0, 1);
     box-shadow: 1px 20px 16px -13px rgba(0, 0, 0, 1);
 }
-    #cv .cv-row .cv-cols .prof-exp .cv-btn:hover {
-        background-color: rgb(84, 230, 230);
-        color: var(--text-color);
-        -webkit-box-shadow: 0px 10px 17px -37px rgba(0, 0, 0, 0.81);
-        -moz-box-shadow: 0px 10px 17px -37px rgba(0, 0, 0, 0.81);
-        box-shadow: 0px 10px 17px -37px rgba(0, 0, 0, 0.81);
+
+#cv .cv-row .cv-cols .prof-exp .cv-btn:hover {
+    background-color: rgb(84, 230, 230);
+    color: var(--text-color);
+    -webkit-box-shadow: inset 1px 2px 27px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: inset 1px 2px 27px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 1px 2px 27px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* CV Mobile Version */
+
+@media only screen and (max-width:850px) {
+
+    #cv {
+        padding: 50px 15px;
     }
 
-    /* CV Mobile Version */
-
-    @media only screen and (max-width:850px) {
-
-        #cv {
-            padding: 50px 15px;
-        }
-
-        #cv .cv-row {
-            flex-direction: column;
-        }
-
-        #cv .cv-row .cv-cols {
-            flex-basis: 100%;
-        }
-
+    #cv .cv-row {
+        flex-direction: column;
     }
 
-    /* Curriculum Vitae  Ends */
+    #cv .cv-row .cv-cols {
+        flex-basis: 100%;
+    }
+
+}
+
+/* Curriculum Vitae  Ends */
+
+/* ------------------------------------------------------------- */
+
+/* My Portfolio Project Section Begins  */
+
+#my-portfolio {
+    padding: 70px 30px;
+}
+
+#my-portfolio .my-port-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+#my-portfolio .my-port-row .my-port-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#my-portfolio .my-port-row .my-port-item .my-port-img img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+#my-portfolio .my-port-row .my-port-item .my-port-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 23, 23, 0.686);
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: scale(0);
+    transition: 0.9s;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#my-portfolio .my-port-row .my-port-item:hover .my-port-info {
+    transform: scale(1);
+    visibility: visible;
+}
+
+#my-portfolio .my-port-row .my-port-item .my-port-info h4 {
+    color: var(--bg-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#my-portfolio .my-port-row .my-port-item .my-port-info h4+p {
+    color: var(--bg-color);
+    font-size: 14px;
+}
+
+#my-portfolio .my-port-row .my-port-item .my-port-info a {
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #2C2F3F;
+    color: var(--bg-color);
+    line-height: 46px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#my-portfolio .my-port-row .my-port-item .my-port-info a:hover {
+    background-color: var(--bg-color);
+    color: black;
+}
+
+/* Mobile Version Portfolio */
+
+@media only screen and (min-width:500px) and (max-width:830px) {
+    #my-portfolio {
+        padding: 50px 10px;
+    }
+
+    #my-portfolio .my-port-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    #my-portfolio .my-port-row .my-port-item .my-port-img img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (min-width:250px) and (max-width:500px) {
+    #my-portfolio {
+        padding: 50px 10px;
+    }
+
+    #my-portfolio .my-port-row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    #my-portfolio .my-port-row .my-port-item .my-port-img img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+
+    }
+}
+
+/* My Portfolio Project Section Ends  */
+
+/* Project Timeline Begins */
+
+
+
+/* Project Timeline Ends */
