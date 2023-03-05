@@ -194,6 +194,11 @@ header .footer-header p a {
     -moz-box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
+.show-btn:hover{
+    background-color: rgb(218, 246, 173);
+    color:#040b14;
+}
+
 
 
 input[type="checkbox"] {
