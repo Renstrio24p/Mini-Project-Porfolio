@@ -1,0 +1,222 @@
+/* Group 2 Framework */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* Color bg */
+
+:root {
+
+    /*-----------------------Background Color -------------------------*/
+    /* Blue */
+    --bg-light-blue: lightblue;
+    --bg-light-blue-1: rgb(135, 202, 224);
+    --bg-light-blue-2: rgb(108, 184, 210);
+    --bg-light-blue-3: rgb(76, 168, 199);
+    --bg-light-blue-4: rgb(47, 164, 203);
+    --bg-light-blue-5: rgb(28, 156, 198);
+    --bg-light-blue-6: rgb(20, 128, 163);
+    --bg-light-blue-7: rgb(15, 103, 133);
+    --bg-light-blue-8: rgb(14, 83, 106);
+    --bg-dark-blue: rgb(11, 54, 69);
+    --bg-dark-blue-1: rgb(7, 37, 48);
+    --bg-dark-blue-2: rgb(7, 37, 48);
+    --bg-dark-blue-3: rgb(5, 28, 37);
+
+    /* Green */
+
+    --bg-light-green: lightgreen;
+    --bg-light-green-1: rgb(113, 228, 113);
+    --bg-light-green-2: rgb(90, 224, 90);
+    --bg-light-green-3: rgb(45, 218, 45);
+    --bg-light-green-4: rgb(27, 209, 27);
+    --bg-light-green-5: rgb(18, 190, 18);
+    --bg-light-green-6: rgb(15, 151, 15);
+    --bg-light-green-7: rgb(6, 93, 6);
+    --bg-light-green-8: rgb(5, 66, 5);
+    --bg-dark-green: rgb(5, 45, 5);
+
+    /* Red */
+
+    --bg-light-red: rgb(241, 191, 191);
+    --bg-light-red-1: rgb(231, 149, 149);
+    --bg-light-red-2: rgb(224, 123, 123);
+    --bg-light-red-3: rgb(238, 84, 84);
+    --bg-light-red-4: rgb(238, 61, 61);
+    --bg-light-red-5: rgb(225, 37, 37);
+    --bg-light-red-6: rgb(210, 27, 27);
+    --bg-red: red;
+    --bg-dark-red: rgb(185, 12, 12);
+    --bg-dark-red-1: rgb(136, 7, 7);
+    --bg-dark-red-2: rgb(85, 2, 2);
+
+    /* Brown */
+
+    --bg-light-brown: rgb(215, 154, 111);
+    --bg-light-brown-1: rgb(175, 117, 76);
+    --bg-light-brown-2: rgb(140, 91, 56);
+    --bg-light-brown-3: rgb(95, 57, 28);
+    --bg-light-brown-4: rgb(89, 47, 14);
+    --bg-brown: brown;
+    --bg-dark-brown: rgb(80, 40, 9);
+    --bg-dark-brown-2: rgb(59, 29, 6);
+
+    /* Orange */
+
+    --bg-light-orange: rgb(250, 196, 97);
+    --bg-light-orange-1: rgb(237, 171, 50);
+    --bg-light-orange-3: rgb(243, 169, 31);
+    --bg-light-orange-4: rgb(247, 171, 30);
+    --bg-orange: orange;
+    --bg-dark-orange: rgb(180, 121, 13);
+    --bg-dark-orange-1: rgb(150, 104, 17);
+    --bg-dark-orange-2: rgb(122, 84, 14);
+    --bg-dark-orange-3: rgb(87, 60, 10);
+
+    /* Pink */
+
+    --bg-light-pink: lightpink;
+    --bg-pink: pink;
+    --bg-dark-pink-1: rgb(234, 135, 150);
+    --bg-dark-pink-2: rgb(250, 109, 130);
+    --bg-dark-pink-3: rgb(241, 73, 98);
+    --bg-dark-pink-4: rgb(241, 50, 79);
+    --bg-dark-pink-5: rgb(244, 34, 65);
+    --bg-dark-pink-6: rgb(240, 16, 49);
+
+    /* Magenta */
+
+    --bg-light-magenta: rgb(248, 166, 248);
+    --bg-light-magenta-1: rgb(248, 129, 248);
+    --bg-light-magenta-2: rgb(249, 102, 249);
+    --bg-light-magenta-3: rgb(245, 66, 245);
+    --bg-light-magenta-4: rgb(243, 48, 243);
+    --bg-magenta: magenta;
+    --bg-dark-magenta: rgb(123, 20, 123);
+    --bg-dark-magenta-1: rgb(92, 19, 92);
+    --bg-dark-magenta-2: rgb(51, 9, 51);
+
+    /* Cyan */
+
+    --bg-light-cyan: rgb(86, 231, 231);
+    --bg-light-cyan-1: rgb(54, 241, 241);
+    --bg-cyan: cyan;
+    --bg-dark-cyan: rgb(9, 169, 169);
+    --bg-dark-cyan-1: rgb(13, 95, 95);
+    --bg-dark-cyan-2: rgb(8, 70, 70);
+    /* Prismarine */
+
+    /*------------------------ TEXT COLOR ----------------------------------*/
+    /* Blue */
+    --tc-light-blue: lightblue;
+    --tc-light-blue-1: rgb(135, 202, 224);
+    --tc-light-blue-2: rgb(108, 184, 210);
+    --tc-light-blue-3: rgb(76, 168, 199);
+    --tc-light-blue-4: rgb(47, 164, 203);
+    --tc-light-blue-5: rgb(28, 156, 198);
+    --tc-light-blue-6: rgb(20, 128, 163);
+    --tc-light-blue-7: rgb(15, 103, 133);
+    --tc-light-blue-8: rgb(14, 83, 106);
+    --tc-dark-blue: rgb(11, 54, 69);
+    --tc-dark-blue-1: rgb(7, 37, 48);
+    --tc-dark-blue-2: rgb(7, 37, 48);
+    --tc-dark-blue-3: rgb(5, 28, 37);
+
+    /* Green */
+
+    --tc-light-green: lightgreen;
+    --tc-light-green-1: rgb(113, 228, 113);
+    --tc-light-green-2: rgb(90, 224, 90);
+    --tc-light-green-3: rgb(45, 218, 45);
+    --tc-light-green-4: rgb(27, 209, 27);
+    --tc-light-green-5: rgb(18, 190, 18);
+    --tc-light-green-6: rgb(15, 151, 15);
+    --tc-light-green-7: rgb(6, 93, 6);
+    --tc-light-green-8: rgb(5, 66, 5);
+    --tc-dark-green: rgb(5, 45, 5);
+
+    /* Red */
+
+    --tc-light-red: rgb(241, 191, 191);
+    --tc-light-red-1: rgb(231, 149, 149);
+    --tc-light-red-2: rgb(224, 123, 123);
+    --tc-light-red-3: rgb(238, 84, 84);
+    --tc-light-red-4: rgb(238, 61, 61);
+    --tc-light-red-5: rgb(225, 37, 37);
+    --tc-light-red-6: rgb(210, 27, 27);
+    --tc-red: red;
+    --tc-dark-red: rgb(185, 12, 12);
+    --tc-dark-red-1: rgb(136, 7, 7);
+    --tc-dark-red-2: rgb(85, 2, 2);
+
+    /* Brown */
+
+    --tc-light-brown: rgb(215, 154, 111);
+    --tc-light-brown-1: rgb(175, 117, 76);
+    --tc-light-brown-2: rgb(140, 91, 56);
+    --tc-light-brown-3: rgb(95, 57, 28);
+    --tc-light-brown-4: rgb(89, 47, 14);
+    --tc-brown: brown;
+    --tc-dark-brown: rgb(80, 40, 9);
+    --tc-dark-brown-2: rgb(59, 29, 6);
+
+    /* Orange */
+
+    --tc-light-orange: rgb(250, 196, 97);
+    --tc-light-orange-1: rgb(237, 171, 50);
+    --tc-light-orange-3: rgb(243, 169, 31);
+    --tc-light-orange-4: rgb(247, 171, 30);
+    --tc-orange: orange;
+    --tc-dark-orange: rgb(180, 121, 13);
+    --tc-dark-orange-1: rgb(150, 104, 17);
+    --tc-dark-orange-2: rgb(122, 84, 14);
+    --tc-dark-orange-3: rgb(87, 60, 10);
+
+    /* Pink */
+
+    --tc-light-pink: lightpink;
+    --tc-pink: pink;
+    --tc-dark-pink-1: rgb(234, 135, 150);
+    --tc-dark-pink-2: rgb(250, 109, 130);
+    --tc-dark-pink-3: rgb(241, 73, 98);
+    --tc-dark-pink-4: rgb(241, 50, 79);
+    --tc-dark-pink-5: rgb(244, 34, 65);
+    --tc-dark-pink-6: rgb(240, 16, 49);
+
+    /* Magenta */
+
+    --tc-light-magenta: rgb(248, 166, 248);
+    --tc-light-magenta-1: rgb(248, 129, 248);
+    --tc-light-magenta-2: rgb(249, 102, 249);
+    --tc-light-magenta-3: rgb(245, 66, 245);
+    --tc-light-magenta-4: rgb(243, 48, 243);
+    --tc-magenta: magenta;
+    --tc-dark-magenta: rgb(123, 20, 123);
+    --tc-dark-magenta-1: rgb(92, 19, 92);
+    --tc-dark-magenta-2: rgb(51, 9, 51);
+
+    /* Cyan */
+
+    --tc-light-cyan: rgb(86, 231, 231);
+    --tc-light-cyan-1: rgb(54, 241, 241);
+    --tc-cyan: cyan;
+    --tc-dark-cyan: rgb(9, 169, 169);
+    --tc-dark-cyan-1: rgb(13, 95, 95);
+    --tc-dark-cyan-2: rgb(8, 70, 70);
+    /* Prismarine */
+
+
+
+
+
+
+
+}
