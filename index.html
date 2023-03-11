@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/js/myscript.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <title>Mini-Personal-Porfolio v.1</title>
 
     <!-- Linking CCS -->
@@ -12,7 +15,7 @@
 
     <!-- GP2 - Framework -->
     <link rel="Stylesheet" href="css/GP2-Framework/framework.css">
-    
+
 
     <!-- Linking Font-Awesome JS CSS -->
 
@@ -59,22 +62,14 @@
                     <li><a href="#about"><i class="fa-solid fa-user icons"></i> My Info </a></li>
                     <li><a href="#my-portfolio"><i class="fa-solid fa-briefcase icons"></i> Portfolio </a></li>
                     <li><a href="#skills"><i class="fa-solid fa-server icons"></i> Skills </a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope icons"></i> Contact </a></li>
+                    <li><a href="#my-contact"><i class="fa-solid fa-envelope icons"></i> Contact </a></li>
                 </ul>
             </nav>
 
 
 
             <!-- Footer Header -->
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="235" height="119" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=ncr mandaluyong&t=k&z=10&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://2yu.co">2yu</a><br>
-                    <a href="https://embedgooglemap.2yu.co">html my google location map</a>
 
-                </div>
-            </div>
             <div class="footer-header">
                 <p>&copy; Copyright 2023 <br> by. Waren Gador </p>
             </div>
@@ -84,8 +79,8 @@
         <!-- Mobile Navigation Toggle -->
 
         <i class="fa-solid fa-bars" id="Menubtn" onclick="openbtn()"></i>
-        
-        
+
+
         <!-- Contact Field Begins-->
 
         <input type="checkbox" id="show" checked>
@@ -94,13 +89,24 @@
         </label>
 
         <div class="wrapper">
-            <h5>Contact Me - Online </h5>
-            <p> Please fill this form </p>
+            <div class="title-msg">
+                <div class="pic-box">
+                    <img src="images/profile.jpg">
+                    <h5>Waren</h5>
+                </div>
+
+                <div class="status">
+                    <div class="point"></div>
+                    <h5 class="stats">Online</h5>
+                </div>
+
+            </div>
+
             <form>
                 <input type="text" placeholder="Your Name " required>
                 <input type="email" placeholder="Your Email" required>
                 <input type="text" placeholder=" Your Message.. " required>
-                <button> Submit </button>
+                <button><i class="fa-brands fa-facebook-messenger"></i> Send Message </button>
             </form>
         </div>
 
@@ -154,7 +160,8 @@
                         <!-- Left Side List -->
                         <div class="icon-list">
                             <ul>
-                                <li><a href=""> <i class="fa-solid fa-cake-candles"></i><strong> Birthday:</strong><span>
+                                <li><a href=""> <i class="fa-solid fa-cake-candles"></i><strong>
+                                            Birthday:</strong><span>
                                             09/15/1997</span></a></li>
                                 <li><a href=""> <i class="fa-brands fa-internet-explorer"></i><strong>
                                             Website:</strong><span>www.warensample.com</span></a></li>
@@ -176,7 +183,7 @@
                                             Email:</strong><span>waren.gador15@gmail.com</span></a></li>
                                 <li><a href=""> <i class="fa-brands fa-microsoft"></i></i><strong>
                                             Email:</strong><span>renstrio@outlook.com</span></a></li>
-                               
+
                             </ul>
                         </div>
                     </div>
@@ -252,7 +259,8 @@
         <section id="skills">
             <h1 class="sub-heading-text">My Skills </h1>
             <div class="divider"></div>
-            <p class="sub-pgraph">Here is my skills in the field of web development in the past 2 years of experience in different professions.</p>
+            <p class="sub-pgraph">Here is my skills in the field of web development in the past 2 years of experience in
+                different professions.</p>
 
             <div class="my-skills-row">
 
@@ -329,8 +337,10 @@
         <section id="cv">
             <h2 class="sub-heading-text"> Resume</h2>
             <div class="divider"></div>
-            <p class="sub-pgraph"> Hi, my name is Waren, and I'm 25. I am currently unemployed because I recently resigned from a technical support representative last 2020,
-                I graduated in computer science from the Asian Institute of Computer Studies last 2019. My hobbies are playing games, reading books, watching funny videos and exciting exploration. </p>
+            <p class="sub-pgraph"> Hi, my name is Waren, and I'm 25. I am currently unemployed because I recently
+                resigned from a technical support representative last 2020,
+                I graduated in computer science from the Asian Institute of Computer Studies last 2019. My hobbies are
+                playing games, reading books, watching funny videos and exciting exploration. </p>
 
             <div class="cv-row">
 
@@ -375,7 +385,8 @@
                         <span class="sp-boxes">2019 - 2020</span>
                         <p>Alorica by the Bay, Pasay City, Metro Manila , NCR</p>
                         <ul>
-                            <li>I worked here as a Technical Support Representative for a year, assisting clients from the US.
+                            <li>I worked here as a Technical Support Representative for a year, assisting clients from
+                                the US.
                             </li>
                             <li>My job is to resolve the problem of customer concerns.
                             </li>
@@ -395,7 +406,7 @@
                             </li>
                             <li>Reprint out mistaken encodes from another encoders problems.
                             </li>
-                            
+
                         </ul>
                     </div>
 
@@ -414,7 +425,8 @@
         <section id="my-portfolio">
             <h2 class="sub-heading-text"> My Portfolio </h2>
             <div class="divider"></div>
-            <p class="sub-pgraph">I present my recently finished mini project this year; some are currently in progress and I'm doing it by far today.</p>
+            <p class="sub-pgraph">I present my recently finished mini project this year; some are currently in progress
+                and I'm doing it by far today.</p>
 
             <div class="my-port-row">
 
@@ -480,15 +492,141 @@
 
         <!---------------------------------------------------------------------------------------------------->
 
+        <!-- My Services Section Begins -->
+
+        <section id="service">
+            <h2 class="sub-heading-text"> Services </h2>
+            <div class="divider"></div>
+            <p class="sub-pgraph">These are the services I've already experienced in different professions in the past
+                business networking strategies.</p>
+            <div class="service-row">
+                <!--- My Service 1 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-people-group ifonts"></i>
+                    </div>
+                    <div class="service-info">
+                        <h4>Work with Collaboration</h4>
+                        <p>Work with group collaboration and sharing ideas with each other's skills and opinions during
+                            workload times.</p>
+                    </div>
+                </div>
+                <!--- My Service 2 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-bar ifonts"></i>
+                    </div>
+                    <div class="service-info">
+                        <h4>Data Analytics</h4>
+                        <p>Analyzing data using PostgreSQL database and excel db relation structures. Making
+                            Visualization of a flow program for a website that can elaborate the function.</p>
+                    </div>
+                </div>
+
+                <!--- My Service 3 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-globe ifonts"></i>
+                    </div>
+                    <div class="service-info">
+                        <h4>Network Configuation</h4>
+                        <p>Configuring and repairing internet traffic flow for a router flow to ensure the internet is
+                            stable using PPPoE and Firewall.</p>
+                    </div>
+                </div>
+                <!--- My Service 4 -->
+                <div class="service-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-ethernet ifonts"></i>
+                    </div>
+                    <div class="service-info">
+                        <h4>Network Cabling</h4>
+                        <p>I can fix and repair those ethernet cables and fibre wires on both ends to ensure the
+                            internet's flow is good at splicing each terminal. </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- My Services Section Ends -->
+
+        <!---------------------------------------------------------------------------------------------------->
+
+        <!-- My Contact Section Begins -->
+
+        <div id="my-contact">
+            <h2 class="sub-heading-text h-contact">Contact</h2>
+            <div class="divider"></div>
+            <p class="sub-pgraph h-pgraph">Here are my contact details for you to reach out to me, or you can click the
+                phone icon below in the lower right to message me directly. If you want to ask questions, you can reach
+                out to me..</p>
+            <div class="contact-row">
+
+                <!-- Left Column -->
+                <div class="contact-left">
+
+                    <!-- Email box -->
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope cfonts"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email(s) :</h4>
+                            <p>waren.gador15@gmail.com</p>
+                            <p>renstrio@outlook.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Tel box -->
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone cfonts"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Tel :</h4>
+                            <p>(+63) 9213633794</p>
+                            <p>(+02) 82788931</p>
+                        </div>
+                    </div>
 
 
+                    <!-- Location box -->
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot cfonts"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Location :</h4>
+                            <p> 197 Molave, Mandaluyong City, 1550, PH</p>
+
+                        </div>
 
 
-        <!--- Main JS File -->
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30890.053492621613!2d121.01786268880544!3d14.58444412698432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c835c77b9b79%3A0xdc4947c8b9d237f8!2sMandaluyong%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1678560332581!5m2!1sfil!2sph"
+                            width="100%" height="250" style="border:0;" ; loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
 
-        <script src="js/myscript.js"></script>
-        <script src="js/jquery.min.js"></script>
+                <!-- Right Column -->
+                <div class="contact-right">
+                    <form action="">
+                        <input class="in" type="text" name="name" id="name" placeholder="Your Name ">
+                        <input class="in" type="text" name="email" id="email" placeholder="abc@xyz.com">
+                        <input class="in" type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea class="in" name="msg" id="msg" cols="30" rows="9"
+                            placeholder="Your Message..."></textarea>
+                        <input class="in-btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
 
+        <!-- My Contact Section Ends -->
 
 
 </body>
