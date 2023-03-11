@@ -405,7 +405,7 @@ button:hover {
     }
 
     section .show-btn {
-        top: 90px;
+        position: 130px;
     }
 
 
@@ -468,6 +468,11 @@ button:hover {
     #Menubtn {
         display: block;
     }
+
+    .show-btn {
+        top: 324px;
+    }
+    
 
 }
 
@@ -795,7 +800,7 @@ main {
 @media only screen and (max-width: 600px) {
 
     .show-btn {
-        top: 450px;
+        top: 80px;
     }
 
     #facts .facts-row .facts-box #icons {
