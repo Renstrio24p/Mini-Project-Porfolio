@@ -345,7 +345,7 @@ button:hover {
 
 /* Mobile Version Pop up Contact */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 
     .wrapper {
         width: 315px;
@@ -378,15 +378,15 @@ button:hover {
         width: 260px;
         padding: 8px;
     }
-}
+} */
 
 /* Realme C15 Resolution Portrait */
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-height: 800px) {
     .wrapper {
 
-        top: 150px;
-        right: 30px;
+        top: 145px;
+        right: 40px;
         width: 290px;
         height: 350px;
     }
@@ -404,6 +404,10 @@ button:hover {
         padding: 10px;
     }
 
+    section .show-btn {
+        top: 90px;
+    }
+
 
 
     input {
@@ -418,7 +422,7 @@ button:hover {
 
 /* Realme C15 Landscape */
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-height:360px) {
     .show-btn {
         top: 120px;
     }
