@@ -118,14 +118,9 @@ header .footer-header p a {
 
 /**/
 
-.pop-up {
-    height: max-content;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-}
 
-.pop-up #Menubtn {
+
+ #Menubtn {
 
     padding: 10px 10px 10px 10px;
     position: fixed;
@@ -147,14 +142,14 @@ header .footer-header p a {
 
 
 
-.pop-up #Menubtn i {
+ #Menubtn i {
     font-size: 4px;
 }
 
 
 /* Pop up Contact form Begins */
 
-.pop-up .show-btn {
+ .show-btn {
     padding: 5px 5px 5px 5px;
     position: fixed;
 
@@ -175,14 +170,14 @@ header .footer-header p a {
     -moz-box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
-.pop-up .show-btn:hover {
+ .show-btn:hover {
     background-color: rgb(218, 246, 173);
     color: #040b14;
 }
 
 
 
-.pop-up input[type="checkbox"] {
+ input[type="checkbox"] {
     padding: 5px 5px 5px 5px;
     position: fixed;
     top: 540px;
@@ -201,15 +196,16 @@ header .footer-header p a {
     visibility: hidden;
 }
 
-.pop-up #show:checked~.wrapper {
+ #show:checked~.wrapper {
     display: none;
 }
 
-.pop-up .wrapper {
+ .wrapper {
     padding: 0;
     margin: 10px;
+    top: 20%;
     position: fixed;
-    width: fit-content;
+    width: 30%;
     height: fit-content;
     color: white;
     font-size: 27px;
@@ -222,7 +218,7 @@ header .footer-header p a {
     z-index: 999;
 }
 
-.pop-up .wrapper .title-msg {
+ .wrapper .title-msg {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     display: flex;
@@ -232,24 +228,24 @@ header .footer-header p a {
     justify-content: space-between;
 }
 
-.pop-up .wrapper .title-msg .pic-box {
+ .wrapper .title-msg .pic-box {
     display: flex;
     align-items: center;
     padding: 0px 0 0 15px;
 }
 
-.pop-up .wrapper .title-msg .pic-box img {
+ .wrapper .title-msg .pic-box img {
     height: 55px;
     width: 50px;
     border-radius: 50%;
 }
 
-.pop-up .wrapper .title-msg .status {
+ .wrapper .title-msg .status {
     display: flex;
     align-items: center;
 }
 
-.pop-up .wrapper .title-msg .status .point {
+ .wrapper .title-msg .status .point {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -258,14 +254,14 @@ header .footer-header p a {
 
 
 
-.pop-up .wrapper .title-msg h5 {
+ .wrapper .title-msg h5 {
     color: white;
     padding: 15px;
     font-size: 20px;
     font-weight: 300;
 }
 
-.pop-up .wrapper h5+p {
+ .wrapper h5+p {
     font-size: 13px;
     font-weight: 600;
     margin-top: 10px;
@@ -274,19 +270,19 @@ header .footer-header p a {
     color: var(--text-color);
 }
 
-.pop-up .wrapper .status .stats {
+ .wrapper .status .stats {
     font-size: 15px;
     font-weight: 400;
 }
 
-.pop-up .wrapper form {
+ .wrapper form {
     width: auto;
     padding: 10px 15px 10px;
     border-radius: 10px;
     border: 1px solid rgb(238, 236, 236);
 }
 
-.pop-up .wrapper form input {
+ .wrapper form input {
     display: block;
     padding: 10px 20px;
     width: 100%;
@@ -300,7 +296,7 @@ header .footer-header p a {
     outline: none;
 }
 
-.pop-up .wrapper form button {
+ .wrapper form button {
     width: 100%;
     padding: 8px;
     border: none;
@@ -308,16 +304,16 @@ header .footer-header p a {
     cursor: pointer;
 }
 
-.pop-up .wrapper form input:focus {
+ .wrapper form input:focus {
     border-color: rgb(238, 236, 236);
 }
 
-.pop-up .wrapper form button:hover {
+ .wrapper form button:hover {
     background-color: rgb(18, 68, 68);
     color: white;
 }
 
-.pop-up .wrapper {
+ .wrapper {
     animation: popup 1s;
 }
 
@@ -356,7 +352,7 @@ header .footer-header p a {
 
 @media only screen and (max-width: 360px) {
     .show-btn {
-        top: 50px;
+        top: 40px;
     }
 }
 
@@ -383,12 +379,22 @@ header .footer-header p a {
 
     .wrapper {
         width: 80%;
+        right: 35%;
     }
 
     .show-btn {
         top: 80px;
     }
 
+}
+
+@media only screen and (max-width:1366px) {
+    .show-btn {
+        margin-top: 15%;
+    }
+    .wrapper {
+        right: 5%;
+    }
 }
 
 
