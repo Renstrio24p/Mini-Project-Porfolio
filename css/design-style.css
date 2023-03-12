@@ -118,7 +118,14 @@ header .footer-header p a {
 
 /**/
 
-#Menubtn {
+.pop-up {
+    height: max-content;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.pop-up #Menubtn {
 
     padding: 10px 10px 10px 10px;
     position: fixed;
@@ -138,14 +145,16 @@ header .footer-header p a {
 
 }
 
-#Menubtn i {
+
+
+.pop-up #Menubtn i {
     font-size: 4px;
 }
 
 
 /* Pop up Contact form Begins */
 
-.show-btn {
+.pop-up .show-btn {
     padding: 5px 5px 5px 5px;
     position: fixed;
 
@@ -166,14 +175,14 @@ header .footer-header p a {
     -moz-box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
-.show-btn:hover {
+.pop-up .show-btn:hover {
     background-color: rgb(218, 246, 173);
     color: #040b14;
 }
 
 
 
-input[type="checkbox"] {
+.pop-up input[type="checkbox"] {
     padding: 5px 5px 5px 5px;
     position: fixed;
     top: 540px;
@@ -192,11 +201,11 @@ input[type="checkbox"] {
     visibility: hidden;
 }
 
-#show:checked~.wrapper {
+.pop-up #show:checked~.wrapper {
     display: none;
 }
 
-.wrapper {
+.pop-up .wrapper {
     padding: 0;
     margin: 10px;
     position: fixed;
@@ -213,7 +222,7 @@ input[type="checkbox"] {
     z-index: 999;
 }
 
-.wrapper .title-msg {
+.pop-up .wrapper .title-msg {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     display: flex;
@@ -223,24 +232,24 @@ input[type="checkbox"] {
     justify-content: space-between;
 }
 
-.wrapper .title-msg .pic-box {
+.pop-up .wrapper .title-msg .pic-box {
     display: flex;
     align-items: center;
     padding: 0px 0 0 15px;
 }
 
-.wrapper .title-msg .pic-box img {
+.pop-up .wrapper .title-msg .pic-box img {
     height: 55px;
     width: 50px;
     border-radius: 50%;
 }
 
-.wrapper .title-msg .status {
+.pop-up .wrapper .title-msg .status {
     display: flex;
     align-items: center;
 }
 
-.wrapper .title-msg .status .point {
+.pop-up .wrapper .title-msg .status .point {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -249,14 +258,14 @@ input[type="checkbox"] {
 
 
 
-.wrapper .title-msg h5 {
+.pop-up .wrapper .title-msg h5 {
     color: white;
     padding: 15px;
     font-size: 20px;
     font-weight: 300;
 }
 
-.wrapper h5+p {
+.pop-up .wrapper h5+p {
     font-size: 13px;
     font-weight: 600;
     margin-top: 10px;
@@ -265,19 +274,19 @@ input[type="checkbox"] {
     color: var(--text-color);
 }
 
-.wrapper .status .stats {
+.pop-up .wrapper .status .stats {
     font-size: 15px;
     font-weight: 400;
 }
 
-.wrapper form {
+.pop-up .wrapper form {
     width: auto;
     padding: 10px 15px 10px;
     border-radius: 10px;
     border: 1px solid rgb(238, 236, 236);
 }
 
-input {
+.pop-up .wrapper form input {
     display: block;
     padding: 10px 20px;
     width: 100%;
@@ -291,7 +300,7 @@ input {
     outline: none;
 }
 
-button {
+.pop-up .wrapper form button {
     width: 100%;
     padding: 8px;
     border: none;
@@ -299,16 +308,16 @@ button {
     cursor: pointer;
 }
 
-input:focus {
+.pop-up .wrapper form input:focus {
     border-color: rgb(238, 236, 236);
 }
 
-button:hover {
+.pop-up .wrapper form button:hover {
     background-color: rgb(18, 68, 68);
     color: white;
 }
 
-.wrapper {
+.pop-up .wrapper {
     animation: popup 1s;
 }
 
@@ -380,9 +389,8 @@ button:hover {
         top: 80px;
     }
 
-    
-
 }
+
 
 /*Header toggle */
 
