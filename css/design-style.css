@@ -122,17 +122,17 @@ header .footer-header p a {
 
  #Menubtn {
 
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     position: fixed;
     top: 25px;
     right: 25px;
-    font-size: 9px;
-    width: 22px;
-    height: 22px;
+    height: 35px;
+    width: 37px;
+    font-size: 20px;
+    line-height: 15px;
     color: white;
     background-color: var(--theme-bg-color);
     text-align: center;
-    line-height: 42px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
     display: none;
@@ -1142,21 +1142,20 @@ main {
     gap: 20px;
 }
 
-#service .service-row .service-box .icon .ifonts {
-    width: 30px;
-    height: 30px;
+#service .service-row .service-box .icon i {
+    text-align: center;
+    width: 50px;
+    height: 46px;
     padding: 10px;
     border-radius: 50%;
     border: 2px solid var(--theme-bg-color);
     font-size: 22px;
-    line-height: 46px;
     background-color: var(--theme-bg-color);
     color: var(--bg-color);
     transition: 0.7s;
-    text-align: center;
 }
 
-#service .service-row .service-box:hover .icon .ifonts {
+#service .service-row .service-box:hover .icon i {
     color: var(--theme-bg-color);
     background-color: white;
 }
@@ -1243,19 +1242,19 @@ main {
     margin: 30px 0;
 }
 
-#my-contact .contact-row .contact-left .icon-box .icon .cfonts {
-    width: 30px;
-    height: 30px;
+#my-contact .contact-row .contact-left .icon-box .icon i {
+    width: 55px;
+    height: auto;
     border-radius: 50%;
     border: 2px solid var(--theme-bg-color);
     padding: 10px;
     text-align: center;
-    line-height: 47px;
-    font-size: 20px;
+    line-height: 29px;
+    font-size: 25px;
     transition: 0.5s;
 }
 
-#my-contact .contact-row .contact-left .icon-box:hover .icon .cfonts {
+#my-contact .contact-row .contact-left .icon-box:hover .icon i {
     background-color: var(--theme-bg-color);
     color: var(--bg-color);
 }

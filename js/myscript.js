@@ -1,12 +1,9 @@
- 
- function openbtn() {
-
- let Menubtn = document.getElementById('Menubtn')
+ let Menubtn = document.getElementById('Menubtn');
  
 Menubtn.addEventListener('click', function (e) {
-    document.querySelector('body').classList.toggle('mobile-nav-active')
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    this.classList.toggle('fa-xmark');
 })
- }
 
 
 
