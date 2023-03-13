@@ -120,7 +120,7 @@ header .footer-header p a {
 
 
 
- #Menubtn {
+#Menubtn {
 
     padding: 10px;
     position: fixed;
@@ -142,14 +142,14 @@ header .footer-header p a {
 
 
 
- #Menubtn i {
+#Menubtn i {
     font-size: 4px;
 }
 
 
 /* Pop up Contact form Begins */
 
- .show-btn {
+.show-btn {
     padding: 5px 5px 5px 5px;
     position: fixed;
 
@@ -170,14 +170,14 @@ header .footer-header p a {
     -moz-box-shadow: 9px 10px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
- .show-btn:hover {
+.show-btn:hover {
     background-color: rgb(218, 246, 173);
     color: #040b14;
 }
 
 
 
- input[type="checkbox"] {
+input[type="checkbox"] {
     padding: 5px 5px 5px 5px;
     position: fixed;
     top: 540px;
@@ -196,11 +196,11 @@ header .footer-header p a {
     visibility: hidden;
 }
 
- #show:checked~.wrapper {
+#show:checked~.wrapper {
     display: none;
 }
 
- .wrapper {
+.wrapper {
     padding: 0;
     margin: 10px;
     top: 20%;
@@ -218,7 +218,7 @@ header .footer-header p a {
     z-index: 999;
 }
 
- .wrapper .title-msg {
+.wrapper .title-msg {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     display: flex;
@@ -228,24 +228,24 @@ header .footer-header p a {
     justify-content: space-between;
 }
 
- .wrapper .title-msg .pic-box {
+.wrapper .title-msg .pic-box {
     display: flex;
     align-items: center;
     padding: 0px 0 0 15px;
 }
 
- .wrapper .title-msg .pic-box img {
+.wrapper .title-msg .pic-box img {
     height: 55px;
     width: 50px;
     border-radius: 50%;
 }
 
- .wrapper .title-msg .status {
+.wrapper .title-msg .status {
     display: flex;
     align-items: center;
 }
 
- .wrapper .title-msg .status .point {
+.wrapper .title-msg .status .point {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -254,14 +254,14 @@ header .footer-header p a {
 
 
 
- .wrapper .title-msg h5 {
+.wrapper .title-msg h5 {
     color: white;
     padding: 15px;
     font-size: 20px;
     font-weight: 300;
 }
 
- .wrapper h5+p {
+.wrapper h5+p {
     font-size: 13px;
     font-weight: 600;
     margin-top: 10px;
@@ -270,19 +270,19 @@ header .footer-header p a {
     color: var(--text-color);
 }
 
- .wrapper .status .stats {
+.wrapper .status .stats {
     font-size: 15px;
     font-weight: 400;
 }
 
- .wrapper form {
+.wrapper form {
     width: auto;
     padding: 10px 15px 10px;
     border-radius: 10px;
     border: 1px solid rgb(238, 236, 236);
 }
 
- .wrapper form input {
+.wrapper form input {
     display: block;
     padding: 10px 20px;
     width: 100%;
@@ -296,7 +296,7 @@ header .footer-header p a {
     outline: none;
 }
 
- .wrapper form button {
+.wrapper form button {
     width: 100%;
     padding: 8px;
     border: none;
@@ -304,16 +304,16 @@ header .footer-header p a {
     cursor: pointer;
 }
 
- .wrapper form input:focus {
+.wrapper form input:focus {
     border-color: rgb(238, 236, 236);
 }
 
- .wrapper form button:hover {
+.wrapper form button:hover {
     background-color: rgb(18, 68, 68);
     color: white;
 }
 
- .wrapper {
+.wrapper {
     animation: popup 1s;
 }
 
@@ -392,6 +392,7 @@ header .footer-header p a {
     .show-btn {
         margin-top: 15%;
     }
+
     .wrapper {
         right: 5%;
     }
@@ -1018,11 +1019,17 @@ main {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    height: fit-content;
+
+    box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.75);
 }
+
 
 #my-portfolio .my-port-row .my-port-item .my-port-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
 
 }
