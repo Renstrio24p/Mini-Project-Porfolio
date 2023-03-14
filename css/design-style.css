@@ -352,7 +352,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 360px) {
     .show-btn {
-        top: 40px;
+        position: relative;
     }
 }
 
@@ -390,7 +390,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width:1366px) {
     .show-btn {
-        margin-top: 15%;
+        margin-top: 8%;
     }
 
     .wrapper {
