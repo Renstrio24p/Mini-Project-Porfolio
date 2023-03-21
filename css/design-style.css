@@ -152,7 +152,7 @@ header .footer-header p a {
 .show-btn {
     padding: 5px 5px 5px 5px;
     position: fixed;
-
+    top: 75%;
     right: 25px;
     width: 42px;
     height: 44px;
@@ -203,7 +203,7 @@ input[type="checkbox"] {
 .wrapper {
     padding: 0;
     margin: 10px;
-    top: 20%;
+    top: 42%;
     position: fixed;
     width: 30%;
     height: fit-content;
@@ -351,8 +351,8 @@ input[type="checkbox"] {
 
 
 @media only screen and (max-width: 360px) {
-    .show-btn {
-        position: relative;
+    .wrapper {
+        top: 20%;
     }
 }
 
