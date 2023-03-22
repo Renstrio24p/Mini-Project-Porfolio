@@ -1,0 +1,33 @@
+/* Facts Section */
+
+#facts {
+
+    padding: 50px 30px;
+    background-color: rgba(211, 211, 211, 0.502);
+
+}
+
+#facts .facts-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+#facts .facts-row .facts-box #icons {
+    color: brown;
+    font-size: 35px;
+}
+
+#facts .facts-row .facts-box strong {
+    color: var(--side-bg-color);
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+#facts .facts-row .facts-box p {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+}
