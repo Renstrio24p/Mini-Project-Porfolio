@@ -1,0 +1,16 @@
+
+@media only screen and (max-width:850px) {
+
+    #cv {
+        padding: 50px 15px;
+    }
+
+    #cv .cv-row {
+        flex-direction: column;
+    }
+
+    #cv .cv-row .cv-cols {
+        flex-basis: 100%;
+    }
+
+}

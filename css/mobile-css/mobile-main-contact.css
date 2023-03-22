@@ -1,0 +1,22 @@
+
+@media only screen and (max-width: 800px) {
+
+    #my-contact {
+        padding: 50px 15px;
+    }
+
+    #my-contact .contact-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    #my-contact {
+        padding: 50px 10px;
+    }
+
+}

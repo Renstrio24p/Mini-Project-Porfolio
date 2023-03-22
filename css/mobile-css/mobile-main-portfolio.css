@@ -1,0 +1,36 @@
+
+@media only screen and (min-width:500px) and (max-width:830px) {
+    #my-portfolio {
+        padding: 50px 10px;
+    }
+
+    #my-portfolio .my-port-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    #my-portfolio .my-port-row .my-port-item .my-port-img img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (min-width:250px) and (max-width:500px) {
+    #my-portfolio {
+        padding: 50px 10px;
+    }
+
+    #my-portfolio .my-port-row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    #my-portfolio .my-port-row .my-port-item .my-port-img img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+
+    }
+}

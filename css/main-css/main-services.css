@@ -1,0 +1,72 @@
+/* My Services Section Begins  */
+
+#service {
+    padding: 70px 30px;
+    background-color: rgb(232, 229, 224);
+}
+
+#service .service-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#service .service-row .service-box {
+    display: flex;
+    gap: 20px;
+}
+
+#service .service-row .service-box .icon i {
+    text-align: center;
+    width: 50px;
+    height: 46px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--theme-bg-color);
+    font-size: 22px;
+    background-color: var(--theme-bg-color);
+    color: var(--bg-color);
+    transition: 0.7s;
+}
+
+#service .service-row .service-box:hover .icon i {
+    color: var(--theme-bg-color);
+    background-color: white;
+}
+
+#service .service-row .service-box .service-info h4 {
+    color: var(--side-bg-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#service .service-row .service-box .service-info h4+p {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 850px) {
+    #service {
+        padding: 50px 15px;
+    }
+
+    #service .service-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #service {
+        padding: 50px 15px;
+    }
+
+    #service .service-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
+}

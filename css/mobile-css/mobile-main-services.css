@@ -1,0 +1,23 @@
+@media only screen and (max-width: 850px) {
+    #service {
+        padding: 50px 15px;
+    }
+
+    #service .service-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #service {
+        padding: 50px 15px;
+    }
+
+    #service .service-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
+}

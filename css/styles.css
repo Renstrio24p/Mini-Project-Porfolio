@@ -1,0 +1,31 @@
+
+/* Entire CSS */
+
+@import url('universal-settings.css');
+
+/* =============== MAIN CSS ================ */
+
+@import url('main-css/header-sidebar.css');
+@import url('main-css/header-buttons.css');
+@import url('main-css/main-home.css');
+@import url('main-css/main-about.css');
+@import url('main-css/main-facts.css');
+@import url('main-css/main-skills.css');
+@import url('main-css/main-cv.css');
+@import url('main-css/main-portfolio.css');
+@import url('main-css/main-services.css');
+@import url('main-css/main-contact.css');
+
+/* ================Mobile CSS ================= */
+
+@import url('mobile-css/mobile-header-sidebar.css');
+@import url('mobile-css/mobile-main-home.css');
+@import url('mobile-css/mobile-main-about.css');
+@import url('mobile-css/mobile-main-facts.css');
+@import url('mobile-css/mobile-main-skills.css');
+@import url('mobile-css/mobile-main-cv.css');
+@import url('mobile-css/mobile-main-portfolio.css');
+@import url('mobile-css/mobile-main-services.css');
+@import url('mobile-css/mobile-main-contact.css');
+
+
