@@ -22,7 +22,7 @@ header .profile-container img {
     border: 10px solid var(--icons-bg-color);
 }
 
-header .profile-container h1 {
+header .profile-container h2 {
     color: white;
     font-weight: 600;
 }
