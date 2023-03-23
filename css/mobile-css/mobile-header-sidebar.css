@@ -44,19 +44,32 @@
 
 }
 
+@media only screen and (min-height:700px) {
+    .wrapper {
+        top: 55%;
+    }
+}
 
 
-@media only screen and (min-width:1050px) {
+
+
+@media only screen and (min-width:1000px) {
 
     .show-btn {
         margin-top: 5%;
     }
 
     .wrapper {
-        width:20%;
+        width:40%;
         top: 55%;
         right: 5%;
     }
 
+}
+
+@media only screen and (min-width:1200px) {
+    .wrapper {
+        width: 20%;
+    }
 }
     
