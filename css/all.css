@@ -1051,40 +1051,28 @@ main {
     font-weight: 600;
 }
 
-#Analytics .oa-skills .oa-items .chart-item .circle-1 {
+#Analytics .oa-skills .oa-items .chart-item circle {
     fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
-    animation: anim 2s linear forwards;
-}
-
-#Analytics .oa-skills .oa-items .chart-item .circle-2 {
-    fill: none;
-    stroke: url(#GradientColor2);
-    stroke-width: 20px;
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
-    animation: anim2 2s linear forwards;
-}
-
-#Analytics .oa-skills .oa-items .chart-item .circle-3 {
-    fill: none;
-    stroke: url(#GradientColor3);
-    stroke-width: 20px;
-    stroke-dasharray: 550;
-    stroke-dashoffset: 550;
-    animation: anim3 2s linear forwards;
-}
-
-#Analytics .oa-skills .oa-items .chart-item .circle-4 {
-    fill: none;
-    stroke: url(#GradientColor4);
     stroke-width: 20px;
     stroke-dasharray: 550;
     stroke-dashoffset: 550;
     animation: anim4 2s linear forwards;
+} 
+
+#Analytics .oa-skills .oa-items .chart-item .circle-1 {   
+    stroke: url(#GradientColor);
+}
+
+#Analytics .oa-skills .oa-items .chart-item .circle-2 {
+    stroke: url(#GradientColor2);
+}
+
+#Analytics .oa-skills .oa-items .chart-item .circle-3 { 
+    stroke: url(#GradientColor3);
+}
+
+#Analytics .oa-skills .oa-items .chart-item .circle-4 {
+    stroke: url(#GradientColor4);
 }
 
 #Analytics .oa-skills .oa-items .chart-item svg {
