@@ -57,13 +57,13 @@
     color: var(--bg-color);
 }
 
-#my-contact .contact-row .contact-left .icon-box .contact-info h4 {
+#my-contact .contact-row .contact-left .icon-box .contact-info h5 {
     font-size: 20px;
     color: var(--side-bg-color);
     font-weight: 600;
 }
 
-#my-contact .contact-row .contact-left .icon-box .contact-info h4+p {
+#my-contact .contact-row .contact-left .icon-box .contact-info h5+p {
     color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
