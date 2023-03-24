@@ -42,7 +42,9 @@ header .profile-container .social-icons a {
 }
 
 header .profile-container .social-icons a:hover {
-    background-color: var(--theme-bg-color);
+    background-color: var(--line-colors);
+    color: black;
+    transition: 0.9s;
 }
 
 /* Navigation Bar Section Begins */
@@ -72,11 +74,11 @@ header nav ul li a i {
 }
 
 header nav ul li a:hover .icons {
-    color: var(--theme-bg-color);
+    color: var(--line-colors);
 }
 
 header nav ul li .active .icons {
-    color: var(--theme-bg-color);
+    color: var(--line-colors);
 }
 
 
