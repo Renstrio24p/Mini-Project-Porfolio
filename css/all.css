@@ -1047,7 +1047,7 @@ main {
                       0px 12px 10px -10px rgba(0, 0, 0, 0.05) ;
 }
 
-#Analytics .oa-skills .oa-items .chart-item .inner-circle #number {
+#Analytics .oa-skills .oa-items .chart-item .inner-circle #number,#number2,#number3,#number4 {
     font-weight: 600;
 }
 
