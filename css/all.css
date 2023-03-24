@@ -1,4 +1,3 @@
-
 /* Universal CSS Start */
 
 /* Google Fonts */
@@ -32,15 +31,16 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 html {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
 
     /*-----------------------Background Color -------------------------*/
     /* Blue */
-    --bg-light-blue:   lightblue;
+    --bg-light-blue: lightblue;
     --bg-light-blue-1: rgb(135, 202, 224);
     --bg-light-blue-2: rgb(108, 184, 210);
     --bg-light-blue-3: rgb(76, 168, 199);
@@ -49,14 +49,14 @@ html {
     --bg-light-blue-6: rgb(20, 128, 163);
     --bg-light-blue-7: rgb(15, 103, 133);
     --bg-light-blue-8: rgb(14, 83, 106);
-    --bg-dark-blue:    rgb(11, 54, 69);
-    --bg-dark-blue-1:  rgb(7, 37, 48);
-    --bg-dark-blue-2:  rgb(7, 37, 48);
-    --bg-dark-blue-3:  rgb(5, 28, 37);
+    --bg-dark-blue: rgb(11, 54, 69);
+    --bg-dark-blue-1: rgb(7, 37, 48);
+    --bg-dark-blue-2: rgb(7, 37, 48);
+    --bg-dark-blue-3: rgb(5, 28, 37);
 
     /* Green */
 
-    --bg-light-green:   lightgreen;
+    --bg-light-green: lightgreen;
     --bg-light-green-1: rgb(113, 228, 113);
     --bg-light-green-2: rgb(90, 224, 90);
     --bg-light-green-3: rgb(45, 218, 45);
@@ -65,76 +65,76 @@ html {
     --bg-light-green-6: rgb(15, 151, 15);
     --bg-light-green-7: rgb(6, 93, 6);
     --bg-light-green-8: rgb(5, 66, 5);
-    --bg-dark-green:    rgb(5, 45, 5);
+    --bg-dark-green: rgb(5, 45, 5);
 
     /* Red */
 
-    --bg-light-red:     rgb(241, 191, 191);
-    --bg-light-red-1:   rgb(231, 149, 149);
-    --bg-light-red-2:   rgb(224, 123, 123);
-    --bg-light-red-3:   rgb(238, 84, 84);
-    --bg-light-red-4:   rgb(238, 61, 61);
-    --bg-light-red-5:   rgb(225, 37, 37);
-    --bg-light-red-6:   rgb(210, 27, 27);
-    --bg-red:           red;
-    --bg-dark-red:      rgb(185, 12, 12);
-    --bg-dark-red-1:    rgb(136, 7, 7);
-    --bg-dark-red-2:    rgb(85, 2, 2);
+    --bg-light-red: rgb(241, 191, 191);
+    --bg-light-red-1: rgb(231, 149, 149);
+    --bg-light-red-2: rgb(224, 123, 123);
+    --bg-light-red-3: rgb(238, 84, 84);
+    --bg-light-red-4: rgb(238, 61, 61);
+    --bg-light-red-5: rgb(225, 37, 37);
+    --bg-light-red-6: rgb(210, 27, 27);
+    --bg-red: red;
+    --bg-dark-red: rgb(185, 12, 12);
+    --bg-dark-red-1: rgb(136, 7, 7);
+    --bg-dark-red-2: rgb(85, 2, 2);
 
     /* Brown */
 
-    --bg-light-brown:   rgb(215, 154, 111);
+    --bg-light-brown: rgb(215, 154, 111);
     --bg-light-brown-1: rgb(175, 117, 76);
     --bg-light-brown-2: rgb(140, 91, 56);
     --bg-light-brown-3: rgb(95, 57, 28);
     --bg-light-brown-4: rgb(89, 47, 14);
-    --bg-brown:         brown;
-    --bg-dark-brown:    rgb(80, 40, 9);
-    --bg-dark-brown-2:  rgb(59, 29, 6);
+    --bg-brown: brown;
+    --bg-dark-brown: rgb(80, 40, 9);
+    --bg-dark-brown-2: rgb(59, 29, 6);
 
     /* Orange */
 
-    --bg-light-orange:   rgb(250, 196, 97);
+    --bg-light-orange: rgb(250, 196, 97);
     --bg-light-orange-1: rgb(237, 171, 50);
     --bg-light-orange-3: rgb(243, 169, 31);
     --bg-light-orange-4: rgb(247, 171, 30);
-    --bg-orange:         orange;
-    --bg-dark-orange:    rgb(180, 121, 13);
-    --bg-dark-orange-1:  rgb(150, 104, 17);
-    --bg-dark-orange-2:  rgb(122, 84, 14);
-    --bg-dark-orange-3:  rgb(87, 60, 10);
+    --bg-orange: orange;
+    --bg-dark-orange: rgb(180, 121, 13);
+    --bg-dark-orange-1: rgb(150, 104, 17);
+    --bg-dark-orange-2: rgb(122, 84, 14);
+    --bg-dark-orange-3: rgb(87, 60, 10);
 
     /* Pink */
 
-    --bg-light-pink:   lightpink;
-    --bg-pink:         pink;
-    --bg-dark-pink-1:  rgb(234, 135, 150);
-    --bg-dark-pink-2:  rgb(250, 109, 130);
-    --bg-dark-pink-3:  rgb(241, 73, 98);
-    --bg-dark-pink-4:  rgb(241, 50, 79);
-    --bg-dark-pink-5:  rgb(244, 34, 65);
-    --bg-dark-pink-6:  rgb(240, 16, 49);
+    --bg-light-pink: lightpink;
+    --bg-pink: pink;
+    --bg-dark-pink-1: rgb(234, 135, 150);
+    --bg-dark-pink-2: rgb(250, 109, 130);
+    --bg-dark-pink-3: rgb(241, 73, 98);
+    --bg-dark-pink-4: rgb(241, 50, 79);
+    --bg-dark-pink-5: rgb(244, 34, 65);
+    --bg-dark-pink-6: rgb(240, 16, 49);
 
     /* Magenta */
 
-    --bg-light-magenta:   rgb(248, 166, 248);
+    --bg-light-magenta: rgb(248, 166, 248);
     --bg-light-magenta-1: rgb(248, 129, 248);
     --bg-light-magenta-2: rgb(249, 102, 249);
     --bg-light-magenta-3: rgb(245, 66, 245);
     --bg-light-magenta-4: rgb(243, 48, 243);
-    --bg-magenta:         magenta;
-    --bg-dark-magenta:    rgb(123, 20, 123);
-    --bg-dark-magenta-1:  rgb(92, 19, 92);
-    --bg-dark-magenta-2:  rgb(51, 9, 51);
+    --bg-magenta: magenta;
+    --bg-dark-magenta: rgb(123, 20, 123);
+    --bg-dark-magenta-1: rgb(92, 19, 92);
+    --bg-dark-magenta-2: rgb(51, 9, 51);
 
     /* Cyan */
 
-    --bg-light-cyan:      rgb(86, 231, 231);
-    --bg-light-cyan-1:    rgb(54, 241, 241);
-    --bg-cyan:            cyan;
-    --bg-dark-cyan:       rgb(9, 169, 169);
-    --bg-dark-cyan-1:     rgb(13, 95, 95);
-    --bg-dark-cyan-2:     rgb(8, 70, 70);
+    --bg-light-cyan: rgb(86, 231, 231);
+    --bg-light-cyan-1: rgb(54, 241, 241);
+    --bg-cyan: cyan;
+    --bg-dark-cyan: rgb(9, 169, 169);
+    --bg-dark-cyan-1: rgb(13, 95, 95);
+    --bg-dark-cyan-2: rgb(8, 70, 70);
     /* Prismarine */
 }
 
@@ -527,7 +527,7 @@ input[type="checkbox"] {
     }
 
     .wrapper {
-        width:40%;
+        width: 40%;
         right: 5%;
     }
 
@@ -637,7 +637,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     main {
         margin: 0;
     }
@@ -1358,6 +1358,140 @@ main {
 
 /*******************************************/
 
+/* My Resource Begins */
+#resource-timeline {
+    padding: 70px 30px;
+    background-color: rgba(31, 31, 31, 0.995);
+}
+
+#resource-timeline p {
+    padding-bottom: 40px;
+}
+
+
+#resource-timeline .rs {
+    color: white;
+}
+
+#resource-timeline h5 {
+    font-size: 25px;
+}
+
+#resource-timeline .sub-pgraph {
+    margin-bottom: 4px;
+}
+
+#resource-timeline .rs-items {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#resource-timeline .rs-items::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(139, 139, 136);
+    left: calc(50% - 1px);
+}
+
+#resource-timeline .rs-items:last-child {
+    margin-bottom: 0;
+}
+
+#resource-timeline .rs-timeline-item {
+    width: 100%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+#resource-timeline .rs-items .rs-timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+#resource-timeline .rs-items .rs-timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+    text-align: left;
+}
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content{
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#resource-timeline .rs-items .rs-timeline-item h5 {
+    margin: 0 0 15px;
+}
+#resource-timeline .rs-items .rs-timeline-item p {
+    line-height: 22px;
+}
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content .icon{
+    font-size: 120px;
+    margin: 0;
+}
+
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-dot {
+    height: 16px;
+    width: 16px;
+    background-color: #2d7b97;
+    position: absolute;
+    left: calc(50% - 7px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-number {
+    font-size: 17px;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content {
+    background-color: rgb(139, 139, 136);
+    padding-left: 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* My Resource Mobile */
+
+@media only screen and (max-width: 767px){
+
+    #resource-timeline h5 {
+        font-size: 17px;
+    }
+
+    #resource-timeline .rs-items .rs-timeline-item:nth-child(odd){
+        padding-right: 3%;
+        text-align: left;
+        text-indent: 2%;
+        padding-left: 3%;
+    }
+    #resource-timeline .rs-items .rs-timeline-item:nth-child(even){
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #resource-timeline .rs-items::before {
+        left: -10px;
+    }
+
+    #resource-timeline .rs-items .rs-timeline-item .rs-timeline-dot {
+        left: -16px;
+    }
+
+}
+
+/* My Resource Ends */
+
+/*******************************************/
+
 /* Contacts Section Begins */
 
 #my-contact {
@@ -1522,4 +1656,3 @@ main {
 /*******************************************/
 
 /* Main End*/
-
