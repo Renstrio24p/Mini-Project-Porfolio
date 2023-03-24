@@ -1452,6 +1452,43 @@ main {
     gap: 20px;
 }
 
+#my-contact .contact-row .contact-right .in-btn {
+    width: 100%;
+    text-align: center;
+}
+
+#my-contact .contact-row .contact-right .in,
+#my-contact .contact-row .contact-right .in-btn {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+    transition: 0.5s;
+}
+
+#my-contact .contact-row .contact-right .in:focus {
+    border: 2px solid var(--theme-bg-color);
+}
+
+#my-contact .contact-row .contact-right form input[type=submit] {
+    background-color: rgb(39, 39, 39);
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#my-contact .contact-row .contact-right form input[type=submit]:hover {
+    background-color: rgb(54, 108, 90);
+}
+
 /* Contacts Mobile */
 
 
