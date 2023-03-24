@@ -1406,6 +1406,11 @@ main {
     position: relative;
 }
 
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
 #resource-timeline .rs-items .rs-timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
     text-align: right;
@@ -1430,6 +1435,33 @@ main {
 #resource-timeline .rs-items .rs-timeline-item .rs-timeline-content .icon{
     font-size: 120px;
     margin: 0;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: white;
+}
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content .icon img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover .bxl-html5 {
+    color: rgb(163, 16, 16);
+}
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover .bxl-css3 {
+    color: rgb(163, 67, 16);
+}
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover .bxl-javascript {
+    color: rgb(131, 104, 6);
+}
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover .bxs-cube-alt {
+    color: rgb(143, 14, 143);
+}
+
+#resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover .bxl-google {
+    color: green;
 }
 
 
