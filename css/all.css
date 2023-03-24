@@ -691,13 +691,10 @@ main {
 #about .about-col .img-col {
     flex-basis: 35%;
     text-align: center;
-
 }
 
 #about .about-col .img-col img {
     width: 100%;
-    border-bottom-left-radius: 70%;
-    border-top-right-radius: 50%;
 }
 
 #about .about-col .col-info {
