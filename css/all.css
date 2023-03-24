@@ -563,7 +563,7 @@ main {
 #home {
     height: 100vh;
     width: 100%;
-    background-image: url('../../images/background-1.jpg');
+    background-image: url(../images/background-1.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -1359,7 +1359,7 @@ main {
 #my-contact {
     padding: 70px 30px;
     width: 100%;
-    background-image: url('../../images/background-11.jpg');
+    background-image: url(../images/background-11.jpg);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
