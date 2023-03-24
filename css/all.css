@@ -860,23 +860,26 @@ main {
     stroke-width: 20px;
     stroke-dasharray: 550;
     stroke-dashoffset: 550;
-    animation: 2s linear forwards anim4
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-1 {
-    stroke: url(#GradientColor)
+    stroke: url(#GradientColor);
+    animation: 2s linear forwards anim;
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-2 {
-    stroke: url(#GradientColor2)
+    stroke: url(#GradientColor2);
+    animation: 2s linear forwards anim2;
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-3 {
-    stroke: url(#GradientColor3)
+    stroke: url(#GradientColor3);
+    animation: 2s linear forwards anim3;
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-4 {
-    stroke: url(#GradientColor4)
+    stroke: url(#GradientColor4);
+    animation: 2s linear forwards anim4;
 }
 
 #Analytics .oa-skills .oa-items .chart-item svg {
@@ -889,25 +892,25 @@ main {
 
 @keyframes anim {
     100% {
-        stroke-dashoffset: 247
+        stroke-dashoffset: 247;
     }
 }
 
 @keyframes anim2 {
     100% {
-        stroke-dashoffset: 357
+        stroke-dashoffset: 357;
     }
 }
 
 @keyframes anim3 {
     100% {
-        stroke-dashoffset: 357
+        stroke-dashoffset: 357;
     }
 }
 
 @keyframes anim4 {
     100% {
-        stroke-dashoffset: 181
+        stroke-dashoffset: 181;
     }
 }
 
