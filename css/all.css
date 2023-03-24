@@ -617,10 +617,6 @@ main {
 /* Home Mobile */
 
 @media only screen and (max-width:670px) {
-
-    main {
-        margin: 0;
-    }
     #home {
         padding: 30px;
     }
@@ -641,6 +637,11 @@ main {
     }
 }
 
+@media only screen and (max-width: 1000px){
+    main {
+        margin: 0;
+    }
+}
 
 /* Home Section Ends */
 
