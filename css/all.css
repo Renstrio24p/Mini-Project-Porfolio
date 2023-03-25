@@ -1571,9 +1571,9 @@ strong {
 #my-contact .contact-row .contact-right .in-btn {
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
-    color: var(--bg-color);
+    color: rgb(56, 55, 55);
     padding: 10px 20px;
     border: 2px solid #d3d3d3;
     outline: 0;
