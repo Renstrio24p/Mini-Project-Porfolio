@@ -1244,7 +1244,7 @@ strong {
 }
 
 #service .service-row .service-box .service-info h4 {
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-size: 20px;
     font-weight: 600
 }
