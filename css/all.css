@@ -237,15 +237,21 @@ header .footer-header {
     align-items: center
 }
 
+#Menubtn,
 .show-btn,
 .wrapper,
 input[type=checkbox] {
     position: fixed;
-    font-size: 27px;
-    line-height: 40px;
     z-index: 999;
     color: #fff;
     text-align: center
+}
+
+.show-btn,
+.wrapper,
+input[type=checkbox] {
+    font-size: 27px;
+    line-height: 40px
 }
 
 header .footer-header .darkmode i {
@@ -283,17 +289,13 @@ header .footer-header p a {
 
 #Menubtn {
     padding: 10px;
-    position: fixed;
     top: 25px;
     right: 25px;
     height: 35px;
     width: 37px;
     font-size: 20px;
     line-height: 15px;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    z-index: 999
+    border-radius: 50%
 }
 
 #Menubtn i {
@@ -460,7 +462,6 @@ input[type=checkbox] {
 }
 
 @media only screen and (max-width:1050px) {
-
     header {
         left: -300px
     }
