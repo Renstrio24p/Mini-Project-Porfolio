@@ -1442,7 +1442,7 @@ strong {
 }
 
 #resource-timeline .rs-items .rs-timeline-item:hover .rs-timeline-dot {
-    background-color: #fff
+    background-color: var(--text-color)
 }
 
 #resource-timeline .rs-items .rs-timeline-item .rs-timeline-number {
