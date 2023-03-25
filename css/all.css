@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600&display=swap);
 @import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
 
+.dark-style,
+:root {
+    --icons-bg-color: #2C2F3F
+}
+
+#service,
+body {
+    background-color: var(--bg-color)
+}
+
 header,
 header .footer-header {
     background-color: var(--side-bg-color);
@@ -48,9 +58,10 @@ header {
 :root {
     --side-bg-color: #040b14;
     --theme-bg-color: rgb(5, 58, 58);
-    --icons-bg-color: #2C2F3F;
     --text-color: #353535;
     --bg-color: #F7F7F7;
+    --analytics-color: rgb(211, 209, 209);
+    --toggle-box: rgba(139, 136, 136, 0.787);
     --line-colors: rgb(15, 244, 244);
     --bg-light-blue: lightblue;
     --bg-light-blue-1: rgb(135, 202, 224);
@@ -220,7 +231,36 @@ header .footer-header {
     font-size: 14px;
     letter-spacing: .6px;
     padding: 15px;
-    position: fixed
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.show-btn,
+.wrapper,
+input[type=checkbox] {
+    position: fixed;
+    font-size: 27px;
+    line-height: 40px;
+    z-index: 999;
+    color: #fff;
+    text-align: center
+}
+
+header .footer-header .darkmode i {
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer
+}
+
+.dark-style {
+    --theme-bg-color: rgb(22, 216, 216);
+    --text-color: #f6f6f6;
+    --bg-color: #080808;
+    --analytics-color: rgb(36, 36, 36);
+    --bg-brown: rgb(1, 254, 43);
+    --toggle-box: rgba(255, 255, 255, 0.734)
 }
 
 #Menubtn,
@@ -234,13 +274,7 @@ input[type=checkbox] {
     right: 25px;
     width: 42px;
     height: 44px;
-    position: fixed;
-    font-size: 27px;
-    line-height: 40px;
-    z-index: 999;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center
+    border-radius: 50%
 }
 
 header .footer-header p a {
@@ -290,17 +324,11 @@ input[type=checkbox] {
     padding: 0;
     margin: 10px;
     top: 42%;
-    position: fixed;
     width: 30%;
     height: fit-content;
-    color: #fff;
-    font-size: 27px;
-    background-color: #fff;
-    text-align: center;
-    line-height: 40px;
+    background-color: var(--bg-color);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .871);
-    z-index: 999;
     animation: 1s popup
 }
 
@@ -357,8 +385,10 @@ input[type=checkbox] {
 .wrapper form {
     width: auto;
     padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid #eeecec
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    background-color: var(--analytics-color)
 }
 
 .wrapper form input {
@@ -366,7 +396,7 @@ input[type=checkbox] {
     padding: 10px 20px;
     width: 100%;
     height: 51px;
-    border: 1px solid #464343;
+    border: none;
     outline: 0;
     color: #040b14;
     margin-bottom: 8px;
@@ -502,6 +532,11 @@ main {
     left: 0
 }
 
+#Analytics .Analytics-cover,
+#facts {
+    background-color: var(--analytics-color)
+}
+
 #home .home-row {
     z-index: 1
 }
@@ -524,6 +559,13 @@ main {
     color: #f5f5f5;
     font-size: 30px;
     font-weight: 500
+}
+
+#Analytics .oa-skills h2,
+.sub-heading-text,
+.sub-pgraph,
+strong {
+    color: var(--text-color)
 }
 
 #home .home-row p span {
@@ -559,7 +601,6 @@ main {
 }
 
 .sub-heading-text {
-    color: #000;
     font-size: 30px;
     margin-bottom: 10px
 }
@@ -572,7 +613,6 @@ main {
 }
 
 .sub-pgraph {
-    color: var(--text-color);
     font-size: 15px;
     letter-spacing: .5px;
     font-weight: 500;
@@ -629,7 +669,7 @@ main {
 }
 
 #about .about-col .col-info .icon-col-list .icon-list ul li strong {
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-weight: 600;
     margin-right: 2px
 }
@@ -639,6 +679,10 @@ main {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px
+}
+
+#facts i {
+    color: var(--bg-red)
 }
 
 @media only screen and (max-width:830px) {
@@ -698,8 +742,7 @@ main {
 }
 
 #facts {
-    padding: 50px 30px;
-    background-color: rgba(211, 211, 211, .502)
+    padding: 50px 30px
 }
 
 #facts .facts-row {
@@ -710,12 +753,12 @@ main {
 }
 
 #facts .facts-row .facts-box #icons {
-    color: brown;
+    color: var(--bg-brown);
     font-size: 35px
 }
 
 #facts .facts-row .facts-box strong {
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-size: 30px;
     margin-left: 5px;
     font-weight: 600
@@ -733,7 +776,8 @@ main {
     margin-top: 35px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px
+    grid-gap: 20px;
+    align-items: center
 }
 
 #skills .my-skills-row .skills-box .skills-info {
@@ -744,10 +788,17 @@ main {
 }
 
 #skills .my-skills-row .skills-box .skills-info h2 {
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 15px;
-    font-style: italic
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+#skills .my-skills-row .skills-box .skills-info i {
+    font-size: 30px
 }
 
 #skills .my-skills-row .skills-box .skills-outer-line {
@@ -775,14 +826,13 @@ main {
 }
 
 #Analytics {
-    background-color: #4b4a4a
+    background-color: var(--text-color)
 }
 
 #Analytics .Analytics-cover {
     padding: 70px 30px;
     width: 100%;
     height: 100%;
-    background-color: #f4f2f2;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 30%;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .2), -6px -6px 10px rgba(0, 0, 0, .4);
@@ -805,6 +855,7 @@ main {
 }
 
 #Analytics .oa-skills .oa-items h4 {
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 600;
     padding-top: 10px
@@ -852,34 +903,35 @@ main {
 #number2,
 #number3,
 #number4 {
-    font-weight: 600
+    font-weight: 600;
+    color: var(--text-color)
 }
 
 #Analytics .oa-skills .oa-items .chart-item circle {
     fill: none;
     stroke-width: 20px;
     stroke-dasharray: 550;
-    stroke-dashoffset: 550;
+    stroke-dashoffset: 550
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-1 {
     stroke: url(#GradientColor);
-    animation: 2s linear forwards anim;
+    animation: 2s linear forwards anim
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-2 {
     stroke: url(#GradientColor2);
-    animation: 2s linear forwards anim2;
+    animation: 2s linear forwards anim2
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-3 {
     stroke: url(#GradientColor3);
-    animation: 2s linear forwards anim3;
+    animation: 2s linear forwards anim3
 }
 
 #Analytics .oa-skills .oa-items .chart-item .circle-4 {
     stroke: url(#GradientColor4);
-    animation: 2s linear forwards anim4;
+    animation: 2s linear forwards anim4
 }
 
 #Analytics .oa-skills .oa-items .chart-item svg {
@@ -892,25 +944,25 @@ main {
 
 @keyframes anim {
     100% {
-        stroke-dashoffset: 247;
+        stroke-dashoffset: 247
     }
 }
 
 @keyframes anim2 {
     100% {
-        stroke-dashoffset: 357;
+        stroke-dashoffset: 357
     }
 }
 
 @keyframes anim3 {
     100% {
-        stroke-dashoffset: 357;
+        stroke-dashoffset: 357
     }
 }
 
 @keyframes anim4 {
     100% {
-        stroke-dashoffset: 181;
+        stroke-dashoffset: 181
     }
 }
 
@@ -942,7 +994,7 @@ main {
 }
 
 #cv .cv-row .cv-cols h2 {
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 25px;
     margin: 15px 0
@@ -968,7 +1020,7 @@ main {
 }
 
 #cv .cv-row .cv-cols h3 {
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase
@@ -996,8 +1048,8 @@ main {
 
 #cv .cv-row .cv-cols .sp-boxes {
     padding: 4px 22px;
-    background-color: rgba(76, 81, 83, .365);
-    color: #282727;
+    background-color: var(--text-color);
+    color: var(--bg-color);
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
@@ -1033,7 +1085,7 @@ main {
 
 #cv .cv-row .cv-cols .prof-exp .cv-btn {
     background-color: var(--text-color);
-    color: #fff;
+    color: var(--bg-color);
     border-radius: 50px;
     padding: 8px;
     text-decoration: none;
@@ -1077,8 +1129,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(23, 23, 23, .686);
-    color: #fff;
+    background-color: var(--toggle-box);
+    color: var(--text-color);
     padding: 0 15px;
     text-align: center;
     display: flex;
@@ -1123,7 +1175,7 @@ main {
 
 #my-portfolio .my-port-row .my-port-item .my-port-info a:hover {
     background-color: var(--bg-color);
-    color: #000
+    color: var(--text-color)
 }
 
 @media only screen and (min-width:500px) and (max-width:830px) {
@@ -1158,10 +1210,6 @@ main {
         height: 300px;
         border-radius: 10px
     }
-}
-
-#service {
-    background-color: #e8e5e0
 }
 
 #service .service-row {
@@ -1207,12 +1255,17 @@ main {
 }
 
 @media only screen and (max-width:850px) {
+
+    #facts .facts-row,
+    #service .service-row {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
     #facts {
         padding: 40px 15px
     }
 
     #facts .facts-row {
-        grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px
     }
 
@@ -1227,10 +1280,6 @@ main {
 
     #cv .cv-row .cv-cols {
         flex-basis: 100%
-    }
-
-    #service .service-row {
-        grid-template-columns: repeat(2, 1fr)
     }
 }
 
@@ -1303,6 +1352,14 @@ main {
     height: 100%;
     background-color: #8b8b88;
     left: calc(50% - 1px)
+}
+
+#my-contact .contact-row .contact-left,
+#my-contact .contact-row .contact-right {
+    color: var(--text-color);
+    background-color: var(--analytics-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    padding: 30px
 }
 
 #resource-timeline .rs-items:last-child {
@@ -1448,11 +1505,7 @@ main {
 #my-contact .contact-row .contact-left {
     flex-basis: 40%;
     min-width: 40%;
-    color: #000;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
-    border-radius: 4px;
-    padding: 30px
+    border-radius: 4px
 }
 
 #my-contact .contact-row .contact-left .icon-box {
@@ -1481,7 +1534,7 @@ main {
 
 #my-contact .contact-row .contact-left .icon-box .contact-info h5 {
     font-size: 20px;
-    color: var(--side-bg-color);
+    color: var(--text-color);
     font-weight: 600
 }
 
@@ -1494,11 +1547,7 @@ main {
 #my-contact .contact-row .contact-right {
     flex-basis: 60%;
     min-width: 60%;
-    color: #000;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
-    border-radius: 4px;
-    padding: 30px
+    border-radius: 4px
 }
 
 #my-contact .contact-row .contact-right form {
@@ -1523,10 +1572,9 @@ main {
     width: 100%;
     font-size: 20px;
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--bg-color);
     padding: 10px 20px;
     border: 2px solid #d3d3d3;
-    border-radius: 6px;
     outline: 0;
     resize: none;
     transition: .5s
@@ -1537,12 +1585,13 @@ main {
 }
 
 #my-contact .contact-row .contact-right form input[type=submit] {
-    background-color: #272727;
+    background-color: var(--text-color);
     color: var(--bg-color);
-    border: 2px solid var(--bg-color);
+    border: none;
     font-size: 17px;
     font-weight: 400;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 5px
 }
 
 #my-contact .contact-row .contact-right form input[type=submit]:hover {

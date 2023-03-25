@@ -3,6 +3,14 @@ Menubtn.addEventListener("click", function (e) {
     document.querySelector("body").classList.toggle("mobile-nav-active"),
         this.classList.toggle("fa-xmark")
 });
+
+let Darkmode = document.getElementById("dark");
+Darkmode.addEventListener("click", function (e) {
+    document.querySelector("body").classList.toggle("dark-style"),
+        this.classList.toggle("bxs-toggle-right")
+});
+
+
 let typed = new Typed(".auto-input", {
     strings: ["a Business Owner", "a Junior UI Designer.", "a Learner.", "Single."],
     typeSpeed: 100, backSpeed: 100, backDelay: 2e3, loop: !0
