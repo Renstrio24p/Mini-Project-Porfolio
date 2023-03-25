@@ -1509,6 +1509,10 @@ strong {
     width: 100%
 }
 
+#my-contact .h-contact , .h-pgraph {
+    color: white;
+}
+
 #my-contact .contact-row .contact-left {
     flex-basis: 40%;
     min-width: 40%;
