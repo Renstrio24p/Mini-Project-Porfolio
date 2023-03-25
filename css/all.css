@@ -1329,9 +1329,8 @@ strong {
     padding-bottom: 40px
 }
 
-#my-contact .h-contact,
-#resource-timeline .rs,
-.h-pgraph {
+#my-contact,
+#resource-timeline .rs {
     color: var(--text-color)
 }
 
