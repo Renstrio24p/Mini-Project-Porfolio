@@ -8,15 +8,13 @@
 
 #service,
 body {
-    background-color: var(--bg-color);
-    transition: .5s
+    background-color: var(--bg-color)
 }
 
 header,
 header .footer-header {
     background-color: var(--side-bg-color);
     bottom: 0;
-    transition: .5s;
     left: 0
 }
 
@@ -61,6 +59,7 @@ header {
     --theme-bg-color: rgb(5, 58, 58);
     --text-color: #353535;
     --bg-color: #F7F7F7;
+    --timeline: rgba(235, 235, 235, 0.995);
     --analytics-color: rgb(211, 209, 209);
     --toggle-box: rgba(50, 50, 50, 0.787);
     --line-colors: rgb(15, 244, 244);
@@ -267,7 +266,9 @@ header .footer-header .darkmode i {
     --bg-color: #080808;
     --analytics-color: rgb(36, 36, 36);
     --bg-brown: rgb(1, 254, 43);
-    --toggle-box: rgba(255, 255, 255, 0.734)
+    --toggle-box: rgba(255, 255, 255, 0.734);
+    --timeline: rgba(31, 31, 31, .995);
+    transition: .9s
 }
 
 #Menubtn,
@@ -564,6 +565,9 @@ main {
 
 #Analytics .oa-skills h2,
 #about p,
+#my-contact .h-contact,
+#resource-timeline .rs,
+.h-pgraph,
 .sub-heading-text,
 .sub-pgraph,
 strong {
@@ -1320,17 +1324,11 @@ strong {
 }
 
 #resource-timeline {
-    background-color: rgba(31, 31, 31, .995)
+    background-color: var(--timeline)
 }
 
 #resource-timeline p {
     padding-bottom: 40px
-}
-
-#my-contact .h-contact,
-#resource-timeline .rs,
-.h-pgraph {
-    color: #fff
 }
 
 #resource-timeline h5 {
@@ -1338,7 +1336,8 @@ strong {
 }
 
 #resource-timeline .sub-pgraph {
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    color: var(--text-color)
 }
 
 #resource-timeline .rs-items {
@@ -1376,7 +1375,8 @@ strong {
 
 #resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover {
     background-color: #fff;
-    transition: .5s
+    transition: .5s;
+    box-shadow: none
 }
 
 #resource-timeline .rs-items .rs-timeline-item:nth-child(odd) {
@@ -1447,11 +1447,14 @@ strong {
 
 #resource-timeline .rs-items .rs-timeline-item .rs-timeline-number {
     font-size: 17px;
-    color: #fff;
+    color: var(--text-color);
     margin: 6px 0 15px
 }
 
 #resource-timeline .rs-items .rs-timeline-item .rs-timeline-content {
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, .77);
+    -webkit-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, .77);
+    -moz-box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, .77);
     flex-direction: row-reverse;
     align-items: center;
     background-color: #8b8b88;
