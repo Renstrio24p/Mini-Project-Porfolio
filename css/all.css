@@ -1532,6 +1532,10 @@ strong {
     transition: .5s
 }
 
+#my-contact .h-contact , .h-pgraph {
+    color: white;
+}
+
 #my-contact .contact-row .contact-left .icon-box:hover .icon i {
     background-color: var(--theme-bg-color);
     color: var(--bg-color)
