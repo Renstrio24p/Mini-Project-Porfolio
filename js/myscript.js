@@ -6,7 +6,7 @@ Menubtn.addEventListener("click", function (e) {
 let Darkmode = document.getElementById("dark");
 Darkmode.addEventListener("click", function (e) {
     document.querySelector("body").classList.toggle("dark-style"),
-        this.classList.toggle("bxs-toggle-right")});
+        this.classList.toggle("bxs-toggle-right")},20);
 
 let typed = new Typed(".auto-input", {
     strings: ["a Business Owner", "a Junior UI Designer.", "a Learner.", "Single."],

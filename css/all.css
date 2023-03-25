@@ -8,14 +8,15 @@
 
 #service,
 body {
-    background-color: var(--bg-color)
+    background-color: var(--bg-color);
+    transition: .5s
 }
 
 header,
 header .footer-header {
     background-color: var(--side-bg-color);
     bottom: 0;
-    transition: .4s;
+    transition: .5s;
     left: 0
 }
 
@@ -1573,7 +1574,7 @@ strong {
     width: 100%;
     font-size: 17px;
     font-weight: 400;
-    color: rgb(56, 55, 55);
+    color: #383737;
     padding: 10px 20px;
     border: 2px solid #d3d3d3;
     outline: 0;
