@@ -1380,6 +1380,7 @@ strong {
 
 #resource-timeline .rs-items .rs-timeline-item .rs-timeline-content:hover {
     background-color: #fff;
+    cursor: pointer;
     transition: .5s
 }
 
