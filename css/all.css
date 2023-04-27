@@ -160,7 +160,16 @@ header {
     position: fixed;
     z-index: 99;
     transition: .5s;
+
 }
+
+/* .head {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+} */
 
 header .profile-container {
     text-align: center;
@@ -238,6 +247,28 @@ header .footer-header {
     align-items: center
 }
 
+.pop-up {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh;
+    width: fit-content;
+    padding: 10px;
+    right: 50px;
+    z-index: 2;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.buttons {
+    height: 100vh;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
 #Menubtn,
 .show-btn,
 .wrapper,
@@ -281,10 +312,11 @@ input[type=checkbox] {
 .show-btn,
 input[type=checkbox] {
     padding: 5px;
-    right: 25px;
+    /* right: 25px; */
     width: 42px;
     height: 44px;
-    border-radius: 50%
+    border-radius: 50%;
+    bottom: 20px;
 }
 
 header .footer-header p a {
@@ -293,9 +325,9 @@ header .footer-header p a {
 
 #Menubtn {
     padding: 10px;
-    top: 25px;
+    /* top: 25px;
     right: 25px;
-    height: 35px;
+    height: 35px; */
     width: 37px;
     font-size: 20px;
     line-height: 15px;
@@ -307,7 +339,7 @@ header .footer-header p a {
 }
 
 .show-btn {
-    top: 75%;
+    /* top: 75%; */
     background-color: #18a1a1;
     box-shadow: 9px 10px 17px 0 rgba(0, 0, 0, .75);
     -webkit-box-shadow: 9px 10px 17px 0 rgba(0, 0, 0, .75);
@@ -330,6 +362,7 @@ input[type=checkbox] {
     padding: 0;
     margin: 10px;
     top: 42%;
+    z-index: 10;
     width: 30%;
     height: fit-content;
     background-color: var(--bg-color);
@@ -480,18 +513,9 @@ input[type=checkbox] {
         width: 80%;
         right: 10%
     }
-
-    .show-btn {
-        top: 13%;
-        font-size: 17px;
-        padding: 1px
-    }
 }
 
 @media only screen and (min-width:1000px) {
-    .show-btn {
-        margin-top: 5%
-    }
 
     .wrapper {
         width: 40%;
