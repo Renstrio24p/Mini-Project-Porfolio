@@ -505,7 +505,8 @@ input[type=checkbox] {
 
 @media only screen and (max-width:1050px) {
     header {
-        left: -300px
+        left: -300px;
+        transition: .5s;
     }
 
     #Menubtn {
@@ -541,8 +542,10 @@ input[type=checkbox] {
 }
 
 main {
-    margin-left: 260px;
-    transition: .3s
+    width: calc(100% - 260px);
+    left: 260px;
+    position: absolute;
+    transition: .9s;
 }
 
 #home {
@@ -630,7 +633,9 @@ strong {
 
 @media only screen and (max-width:1050px) {
     main {
-        margin: 0
+        width: 100%;
+        left:0;
+        transition: .2s;
     }
 }
 
