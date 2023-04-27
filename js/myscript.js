@@ -5,6 +5,8 @@
 
 const toggle = document.getElementById('Menubtn');
 const sidebar = document.getElementById('sidebar');
+const popup = document.getElementById('show')
+
 
 document.onclick = function(e){
     if(e.target.id !== 'sidebar' && e.target.id != 'Menubtn'){
@@ -19,7 +21,6 @@ toggle.onclick = function(){
     toggle.classList.toggle('fa-xmark')
     sidebar.classList.toggle('mobile-nav-active')
 }
-
 
 let Darkmode = document.getElementById("dark");
 Darkmode.addEventListener("click", function (e) {
