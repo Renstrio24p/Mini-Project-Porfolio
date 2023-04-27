@@ -1,7 +1,25 @@
-let Menubtn = document.getElementById("Menubtn");
-Menubtn.addEventListener("click", function (e) {
-    document.querySelector("body").classList.toggle("mobile-nav-active"),
-        this.classList.toggle("fa-xmark")});
+// let Menubtn = document.getElementById("Menubtn");
+// Menubtn.addEventListener("click", function (e) {
+//     document.querySelector("body").classList.toggle("mobile-nav-active"),
+//         this.classList.toggle("fa-xmark")});
+
+const toggle = document.getElementById('menu-btn');
+const sidebar = document.getElementById('sidebar');
+
+document.onclick = function(e){
+    if(e.target.id !== 'sidebar' && e.target.id != 'Menu-btn'){
+        toggle.classList.remove('mobile-nav-active')
+        toggle.classList.remove('fa-xmark')
+        sidebar.classList.remove('mobile-nav-active')
+    }
+}
+
+toggle.onclick = function(){
+    toggle.classList.toggle('mobile-nav-active')
+    toggle.classList.toggle('fa-xmark')
+    sidebar.classList.toggle('mobile-nav-active')
+}
+
 
 let Darkmode = document.getElementById("dark");
 Darkmode.addEventListener("click", function (e) {
