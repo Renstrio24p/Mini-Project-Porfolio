@@ -269,7 +269,7 @@ header .footer-header .darkmode i {
     --bg-brown: rgb(1, 254, 43);
     --toggle-box: rgba(255, 255, 255, 0.734);
     --timeline: rgba(31, 31, 31, .995);
-    transition: 0.9s
+    transition: 0.5s
     
 }
 
