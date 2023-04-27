@@ -455,7 +455,7 @@ input[type=checkbox] {
     }
 }
 
-.mobile-nav-active header {
+#sidebar.mobile-nav-active {
     left: 0;
     transition: .5s;
 }

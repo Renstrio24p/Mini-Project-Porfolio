@@ -3,11 +3,11 @@
 //     document.querySelector("body").classList.toggle("mobile-nav-active"),
 //         this.classList.toggle("fa-xmark")});
 
-const toggle = document.getElementById('menu-btn');
+const toggle = document.getElementById('Menubtn');
 const sidebar = document.getElementById('sidebar');
 
 document.onclick = function(e){
-    if(e.target.id !== 'sidebar' && e.target.id != 'Menu-btn'){
+    if(e.target.id !== 'sidebar' && e.target.id != 'Menubtn'){
         toggle.classList.remove('mobile-nav-active')
         toggle.classList.remove('fa-xmark')
         sidebar.classList.remove('mobile-nav-active')
