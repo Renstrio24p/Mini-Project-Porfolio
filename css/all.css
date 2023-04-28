@@ -335,7 +335,8 @@ header .footer-header p a {
     width: 37px;
     font-size: 20px;
     line-height: 15px;
-    border-radius: 50%
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #Menubtn i {
@@ -347,7 +348,8 @@ header .footer-header p a {
     background-color: #18a1a1;
     box-shadow: 9px 10px 17px 0 rgba(0, 0, 0, .75);
     -webkit-box-shadow: 9px 10px 17px 0 rgba(0, 0, 0, .75);
-    -moz-box-shadow: 9px 10px 17px 0 rgba(0, 0, 0, .75)
+    -moz-box-shadow: 9px 10px 17px 0 rgba(0, 0, 0, .75);
+    cursor: pointer;
 }
 
 .show-btn:hover {
@@ -495,6 +497,16 @@ input[type=checkbox] {
 #sidebar.mobile-nav-active {
     left: 0;
     transition: .5s;
+}
+
+@media only screen and (max-height:500px){
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    nav ul li > a,nav ul li > i{
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width:600px) {
